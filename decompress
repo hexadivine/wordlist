@@ -1,0 +1,14 @@
+#!/bin/bash
+
+unzip ./web/all_web_dirs.txt.zip -d ./web	
+rm ./web/all_web_dirs.txt.zip
+
+unzip ./common_passwords/rockyou_part1.zip -d ./common_passwords/
+unzip ./common_passwords/rockyou_part3.zip -d ./common_passwords/
+unzip ./common_passwords/rockyou_part2.zip -d ./common_passwords/
+rm ./common_passwords/rockyou_part1.zip
+rm ./common_passwords/rockyou_part2.zip
+rm ./common_passwords/rockyou_part3.zip
+cat ./common_passwords/rockyou_part*.txt >> rockyou.txt
+rm ./common_passwords/rockyou_part*.txt
+
